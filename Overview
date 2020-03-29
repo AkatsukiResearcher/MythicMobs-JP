@@ -6,7 +6,7 @@ mobname:
 
   Type:
 #Mobの種類 例 Type:Zombie 
-#Mobの種類リスト - https://www.mythicmobs.net/manual/doku.php/databases/mobs/types
+#Mobの種類の一覧表 - https://www.mythicmobs.net/manual/doku.php/databases/mobs/types
 
   Display:
 #Mobに表示させる名前 例 Display:'&eTestMob'  
