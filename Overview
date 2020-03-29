@@ -1,0 +1,159 @@
+#日本語で保存するときに、エンコードの種類を"Unicode(UTF-8)"にしてください。
+#それ以外のエンコードで保存すると、マイクラ内で文字化けします。
+
+mobname:
+#Mobの名前 例 mobname:TestMob
+
+  Type:
+#Mobの種類 例 Type:Zombie 
+#Mobの種類リスト - https://www.mythicmobs.net/manual/doku.php/databases/mobs/types
+
+  Display:
+#Mobに表示させる名前 例 Display:'&eTestMob'  
+#この場合は、黄色のTestMobという名前が表示されます。
+#装飾コードリスト - https://minecraft-ja.gamepedia.com/%E8%A3%85%E9%A3%BE%E3%82%B3%E3%83%BC%E3%83%89
+#注意:'(アポストロフィー)を忘れずに！
+ 
+ Health:
+#Mobの体力を設定できます。 例 Health:100
+#この場合は、Mobの体力が１００に設定されています。
+#注意:spigotの設定ファイルでは、最大体力が2048に制限されています。
+#体力を２０４８以上にしたい場合は、spigot.ymlで最大体力の制限を変更できます。
+ 
+ Damage:
+#Mobの近接攻撃力を設定できます。例 Damage:10
+#この場合は、Mobの攻撃力が１０に設定されています。
+#１ダメージ＝０．５ハート
+
+  Armor:
+#Mobが設定した量だけ受ける攻撃を減らすことができます。 例 Armor:5
+#１ダメージ＝０．５ハート
+
+  BossBar:
+    Enabled: true/false
+#体力バーを出すか出さないかを設定できます。 例 Enabled: true(有効にする) flase(無効にする)
+    Title: 'TitleName'
+#体力バーの上に出す文字を設定できます。
+#注意:'(アポストロフィー)を忘れずに！
+    Range: range
+#体力バーが表示させる範囲を設定できます。例 Range: 5 
+#この場合は、プレイヤーがMobの５ブロック以内にいると体力バーが表示されます。
+    Color: color
+#体力バーの色を設定することができます。 例 Color: Gray
+#この場合は、体力バーの色が灰色に設定されています。
+    Style: style
+#文字のスタイルを設定することができます。 例 Style: SOLID
+#使用可能なスタイル : SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+    CreateFog: true/false
+#使用不可
+    DarkenSky: true/false
+#使用不可
+    PlayMusic: true/false
+#使用不可
+
+  Faction:
+#高度なAIの攻勢に使用できるMobの派閥を設定できます。
+#例 Faction: SuperZombies
+
+  Mount:
+#Mobのマウントを設定することができます。 例 Mount:super_zombie_horse
+#Mobはスポーンするときに、定義されたマウントに自動的に乗ることができます。
+
+  Options:
+#これは、多数のサブオプションが付属している特別なフィールドです。
+#例 Options:
+#     MovementSpeed: 0.3 (Mobの移動速度が0.3)
+#     NoDamageTicks: 50  (Mobがが攻撃を受けてから無敵状態になるまでの時間が50ティック)
+#Mobがデスポーンするか、ノックバック抵抗の設定、追跡距離の設定、移動速度などがあります。
+#利用可能なオプションのリスト - https://www.mythicmobs.net/manual/doku.php/databases/mobs/options
+#20ティック ＝ 1秒
+
+  Modules:
+#このフィールドでは、脅威テーブルや免除テーブルを
+#有効にするために使用されるサブオプションを追加することができます。
+#例   Modules:
+#       ThreatTable: true(有効にする) flase(無効にする) 
+#脅威テーブル - https://www.mythicmobs.net/manual/doku.php/databases/mobs/modules/threattables
+#免除テーブル - https://www.mythicmobs.net/manual/doku.php/databases/mobs/modules/immunitytables
+
+  AIGoalSelectors:
+#このフィールドは、MobのAIの目標をカスタマイズするために使用されます。
+#Mobが実行したいことを決定します。
+#例   AIGoalSelectors:
+#     - 0 clear (MobからAIを削除します=リセット)
+#     - 1 meleeattack (近接攻撃を１回)
+#     - 2 randomstroll (Mobはランダムに周りを見回ります)
+#カスタマイズAI - https://www.mythicmobs.net/manual/doku.php/databases/mobs/aigoals
+
+  AITargetSelectors:
+#このフィールドは、MobのAIのターゲットをカスタマイズするために使用されます。
+#どのモブがターゲットにしたいかを決定します。
+#例   AITargetSelectors:
+#     - 0 clear (MobからAIを削除します=リセット)
+#     - 1 players (１人のプレーヤーをターゲットにします)
+#     - 2 golems (２体のアイアンゴーレムをターゲットにします)
+#カスタマイズAI - https://www.mythicmobs.net/manual/doku.php/databases/mobs/aigoals
+
+  Drops:
+#Mobにカスタムしたドロップを追加するために使用されます。 
+#バニラアイテム、神話アイテム、経験値、クロスプラグインアイテム（サポートされている場合）、
+#または独自の条件システムを備えたカスタムドロップテーブルにすることもできます。
+#例   Drops:
+#     - <item(アイテム)/exp(経験値)/droptable(ドロップテーブル)> <amount(量)> <chance(確率)>
+#ドロップ - https://www.mythicmobs.net/manual/doku.php/databases/drops/overview
+
+  DropsPerLevel: 
+#レベルごとのドロップは通常のドロップと同じように機能しますが、ドロップの量はMobのレベルに比例して増加します。
+#例    DropsPerLevel:
+#     -<item(アイテム)/exp(経験値)/droptable(ドロップテーブル)> <amount(量)> <chance(確率)>
+#このオプションは4.4で削除されました。代わりにドロップテーブルでBonusLevelItemsを使用してください
+
+  DamageModifiers:
+#このフィールドを使用すると、どの原因でどのようにどの程度のダメージを受けるかを完全に制御できます。
+#例    DamageModifiers：
+#      -ENTITY_ATTACK 0.75 (近接ダメージと発射物へのダメージを25％減少させます)
+#ダメージ修飾子 - https://www.mythicmobs.net/manual/doku.php/databases/misc/damagemodifiers
+
+  Equipment:
+#Mobに最初のスポーン時にバニラアイテムまたは神話アイテムを装備するために使用できます。
+#例  Equipment: 
+#    -TestHelmet：4 (頭にTestHelmetという神話アイテムを装備させます)
+#    -diamond_sword：0 (メインハンドにバニラアイテムのダイヤモンドの剣を装備させます)
+#装置 - https://www.mythicmobs.net/manual/doku.php/databases/misc/equipment
+
+  KillMessages:
+#暴徒がプレーヤーを殺したときに表示される殺害メッセージをカスタマイズすることができます。
+#例   KillMessages:
+#     - '<target.name> 私に勝負を挑むなど、１００万年早い'
+#カスタム殺害メッセージ - https://www.mythicmobs.net/manual/doku.php/databases/mobs/killmessages
+
+  LevelModifiers:
+#このフィールドは、どのレベルでどの種類の統計を取得するかを決定するために使用されます。
+#レベルごとに指定された数だけモブのそれぞれの統計を増やします。
+#例   LevelModifiers:
+#       Health: 12 (体力が１２)
+#       Damage: 0.5　(攻撃力が０．５)
+#Mobのレベル - https://www.mythicmobs.net/manual/doku.php/databases/mobs/levels
+
+  Disguise:
+#モブを他のエンティティのように表示するために使用されます。
+#例    Disguise:
+         Type: player 
+         Skin: 'name' (プレーヤーの名前)
+         Player: name　(プレーヤーの名前)
+         Burning: true(有効にする) flase(無効にする)
+         Blocking: true(有効にする) flase(無効にする)
+         Invisible: true(有効にする) flase(無効にする)
+         ShowName: true(有効にする) flase(無効にする)
+         Sneaking: true(有効にする) flase(無効にする)
+         Sprinting: true(有効にする) flase(無効にする)
+         ModifyBoundingBox: true(有効にする) flase(無効にする)
+#注意:'(アポストロフィー)を忘れずに！
+#変装 - https://www.mythicmobs.net/manual/doku.php/addons/disguises/start
+#注意:このフィールドには、プラグイン「LibsDisguises」がサーバーにインストールされ、機能している必要があります。
+
+  Skills:
+#スキルセクションは、Mobが利用できるスキルとそのタイミングを決定するために使用されます。
+#例     Skills:
+#       - ignite{ticks=100} @target ~onAttack <50% 0.5 (近接攻撃の５０％未満の体力でのみで発火する)
+#スキル - https://www.mythicmobs.net/manual/doku.php/skills/start
