@@ -1,5 +1,6 @@
 #日本語で保存するときに、エンコードの種類を"Unicode(UTF-8)"にしてください。
 #それ以外のエンコードで保存すると、マイクラ内で文字化けします。
+＃概要 - https://www.mythicmobs.net/manual/doku.php/databases/mobs/overview
 
 mobname:
 #Mobの名前 例 mobname:TestMob
