@@ -3,7 +3,7 @@
 ＃概要 - https://www.mythicmobs.net/manual/doku.php/databases/mobs/overview
 
 mobname:
-#Mobの名前 例 mobname:TestMob
+#"mobname"のところにMobの名前 例 TestMob:
 
   Type:
 #Mobの種類 例 Type:Zombie 
