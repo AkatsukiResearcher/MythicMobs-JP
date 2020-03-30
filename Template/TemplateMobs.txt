@@ -1,9 +1,9 @@
 TestMob:
-  Type:Zombie
-  Display:'&eTestMob' 
-  Health:100
-  Damage:10
-  Armor:5
+  Type: Zombie
+  Display: '&eTestMob' 
+  Health: 100
+  Damage: 10
+  Armor: 5
   BossBar:
     Enabled: true
     Title: '&e&lTemplate'
