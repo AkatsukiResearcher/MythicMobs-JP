@@ -160,6 +160,7 @@ mobname:
 #変装を永続的に輝かせます。
 #        Gliding: true(有効にする) flase(無効にする) 
 #変装を永続的に滑らせます。
+#“Glowing”と“Gliding”はバージョン2.3.2で追加されました。 
 #注意:'(アポストロフィー)を忘れずに！
 #変装 - https://www.mythicmobs.net/manual/doku.php/addons/disguises/start
 #注意:このフィールドには、プラグイン「LibsDisguises」がサーバーにインストールされ、機能している必要があります。
