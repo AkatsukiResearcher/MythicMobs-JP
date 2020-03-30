@@ -139,16 +139,16 @@ mobname:
   Disguise:
 #モブを他のエンティティのように表示するために使用されます。
 #例    Disguise:
-         Type: player 
-         Skin: 'name' (プレーヤーの名前)
-         Player: name　(プレーヤーの名前)
-         Burning: true(有効にする) flase(無効にする)
-         Blocking: true(有効にする) flase(無効にする)
-         Invisible: true(有効にする) flase(無効にする)
-         ShowName: true(有効にする) flase(無効にする)
-         Sneaking: true(有効にする) flase(無効にする)
-         Sprinting: true(有効にする) flase(無効にする)
-         ModifyBoundingBox: true(有効にする) flase(無効にする)
+#        Type: player 
+#        Skin: 'name' (プレーヤーの名前)
+#        Player: name　(プレーヤーの名前)
+#        Burning: true(有効にする) flase(無効にする)
+#        Blocking: true(有効にする) flase(無効にする)
+#        Invisible: true(有効にする) flase(無効にする)
+#        ShowName: true(有効にする) flase(無効にする)
+#        Sneaking: true(有効にする) flase(無効にする)
+#        Sprinting: true(有効にする) flase(無効にする)
+#        ModifyBoundingBox: true(有効にする) flase(無効にする)
 #注意:'(アポストロフィー)を忘れずに！
 #変装 - https://www.mythicmobs.net/manual/doku.php/addons/disguises/start
 #注意:このフィールドには、プラグイン「LibsDisguises」がサーバーにインストールされ、機能している必要があります。
