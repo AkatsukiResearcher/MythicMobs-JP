@@ -1,0 +1,49 @@
+mobname:TestMob
+  Type:Zombie
+  Display:'&eTestMob' 
+  Health:100
+  Damage:10
+  Armor:5
+  BossBar:
+    Enabled: true
+    Title: '&e&lTemplate'
+    Range: 5
+    Color: Gray
+    Style: SOLID
+  Faction: SuperZombies
+  Mount: super_zombie_horse
+  Options: 
+    MovementSpeed: 0.3
+    NoDamageTicks: 50 
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 golems
+  Drops:
+  - diamondsword 1 0.5
+  - SpecialSword 1 1 
+  DropsPerLevel: 
+  - diamondsword 1 0.8 
+  - SpecialSword 3 1
+  DamageModifiers:
+  -ENTITY_ATTACK 0.75
+  Equipment:
+  -TestHelmet：4
+  -diamond_sword：0
+  KillMessages:
+  - '<target.name> 私に勝負を挑むなど、１００万年早い'
+  LevelModifiers:
+    Health: 12 
+    Damage: 0.5　
+  Disguise:
+    Type: player
+    Skin: '&eTestMob'
+    Player: test
+  Skills:
+  - ignite{ticks=100} @target ~onAttack <50% 0.5

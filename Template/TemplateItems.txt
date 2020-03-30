@@ -1,0 +1,18 @@
+SpecialSword:
+  Id: 272
+  Data: 0
+  Display: '&eSpecialSword'
+  Lore:
+  - 'test1'
+  - 'test2'
+  Enchantments:
+  - DAMAGE_ALL 1
+TestHelmet:
+  Id: 306
+  Data: 0
+  Display: '&eTestHelmet'
+  Lore:
+  - 'test1'
+  - 'test2'
+  Options:
+    Health: 20 
