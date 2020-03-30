@@ -1,4 +1,4 @@
-mobname:TestMob
+TestMob:
   Type:Zombie
   Display:'&eTestMob' 
   Health:100
