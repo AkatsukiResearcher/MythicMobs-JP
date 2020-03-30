@@ -170,7 +170,8 @@ mobname:
 #“Glowing”と“Gliding”はバージョン2.3.2で追加されました。 
 #注意:'(アポストロフィー)を忘れずに！
 #変装 - https://www.mythicmobs.net/manual/doku.php/addons/disguises/start
-#注意:このフィールドには、プラグイン"LibsDisguises"と"Protocollib"と"BossSkin"がサーバーにインストールされ、機能している必要があります。
+#注意:このフィールドには、プラグイン"LibsDisguises"と"Protocollib"と"BossSkin"と"CommandNPC"がサーバーにインストールされ、
+#機能している必要があります。
 
   Skills:
 #スキルセクションは、Mobが利用できるスキルとそのタイミングを決定するために使用されます。
