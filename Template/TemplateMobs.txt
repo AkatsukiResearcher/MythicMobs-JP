@@ -1,51 +1,55 @@
-TestMob:
+super_zombie:
   Type: zombie
-  Display: '&eTestMob' 
-  Health: 100
-  Damage: 10
-  Armor: 5
-  BossBar:
-    Enabled: true
-    Title: '&e&lTemplate'
-    Range: 5
-    Color: Gray
-    Style: SOLID
-  Faction: SuperZombies
-  Mount: super_zombie_horse
-  Options: 
-    MovementSpeed: 0.3
-    NoDamageTicks: 50 
+  Display: '&lSuper Zombie&r'
+  Health: 200
+  Damage: 14
+  Armor: 10
+  Faction: superb_zombies
+  Mount: super_zombie_undead_horse
+  Options:
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    Despawn: false
+    KnockbackResistance: 0.25
+    MovementSpeed: 0.25
   Modules:
-    ThreatTable: true
-  AIGoalSelectors::
+    ThreatTable: false
+    ImmunityTable: true
+  AIGoalSelectors:
   - 0 clear
   - 1 meleeattack
   - 2 randomstroll
   AITargetSelectors:
   - 0 clear
-  - 1 players
-  - 2 golems
+  - 1 attacker
+  - 2 players
   Drops:
-  - diamondsword 1 0.5
-  - SpecialSword 1 1 
-  - exp 10 1
-  DropsPerLevel: 
-  - diamondsword 1 0.8 
-  - SpecialSword 3 1
+  - diamond 1-3 1
   - exp 50 1
+  - super_zombie_sword 1 1
+  DropsPerLevel:
+  - rotten_flesh 1-3 0.5
+  - exp 10 1
   DamageModifiers:
-  -ENTITY_ATTACK 0.75
+  - ENTITY_ATTACK 0
+  - PROJECTILE 1.25
+  - MAGIC 1.75
   Equipment:
-  - TestHelmet:4
-  - diamond_sword:0
+  - super_zombie_helmet:4
+  - super_zombie_sword:0
   KillMessages:
-  - '<target.name> 私に勝負を挑むなど、１００万年早い'
+  - '<target.name> was superbly slain by a <mob.name>'
   LevelModifiers:
-    Health: 12 
-    Damage: 0.5　
+  - Armor 0.05
+  - MovementSpeed: 0.01
+  - KnockbackResistance: 0.05
+  - Health: 2
+  - Damage: 1
   Disguise:
     Type: player
-    Skin: '&eTestMob'
-    Player: test
+    Skin: '&lSuper Zombie&r'
+    Player: jaylawl
   Skills:
-  - ignite{ticks=100} @target ~onAttack <50% 0.5
+  - throw{v=5;vy=5} @target ~onAttack 0.5
+  - effect:sound{s=mob.zombie.hurt;v=1;p=0} @self ~onDamaged
+  - effect:particles{p=cloud;a=50;s=0.05} @self ~onDeath
