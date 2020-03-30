@@ -67,7 +67,7 @@ mobname:
 #     NoDamageTicks: 50  (Mobがが攻撃を受けてから無敵状態になるまでの時間が50ティック)
 #Mobがデスポーンするか、ノックバック抵抗の設定、追跡距離の設定、移動速度などがあります。
 #利用可能なオプションのリスト - https://www.mythicmobs.net/manual/doku.php/databases/mobs/options
-#20ティック ＝ 1秒
+#20ティック ＝ 1秒 
 
   Modules:
 #このフィールドでは、脅威テーブルや免除テーブルを
@@ -101,6 +101,7 @@ mobname:
 #または独自の条件システムを備えたカスタムドロップテーブルにすることもできます。
 #例   Drops:
 #     - <item(アイテム)/exp(経験値)/droptable(ドロップテーブル)> <amount(量)> <chance(確率)>
+#0.01=1%(パーセント)
 #ドロップ - https://www.mythicmobs.net/manual/doku.php/databases/drops/overview
 
   DropsPerLevel: 
