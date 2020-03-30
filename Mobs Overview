@@ -143,12 +143,23 @@ mobname:
 #        Skin: 'name' (プレーヤーの名前)
 #        Player: name　(プレーヤーの名前)
 #        Burning: true(有効にする) flase(無効にする)
+#Mobが常に燃えているように見えるようにします。
 #        Blocking: true(有効にする) flase(無効にする)
+#特定の変装が“blocking”アニメーションで動かなくなります。
 #        Invisible: true(有効にする) flase(無効にする)
+#Mobを永続的に非表示(透明)にします。
 #        ShowName: true(有効にする) flase(無効にする)
+#通常は付けられない特定の変装（ブロックやアイテムなど）の上に名前タグを表示します。
 #        Sneaking: true(有効にする) flase(無効にする)
+#特定の変装が“sneaking”アニメーションで動かなくなります。
 #        Sprinting: true(有効にする) flase(無効にする)
+#特定の変装が“sprinting”アニメーションで動かなくなります。
 #        ModifyBoundingBox: true(有効にする) flase(無効にする)
+#これをfalseに設定すると、Mobは元のヒットボックスを維持します。
+#        Glowing: true(有効にする) flase(無効にする)
+#変装を永続的に輝かせます。
+#        Gliding: true(有効にする) flase(無効にする) 
+#変装を永続的に滑らせます。
 #注意:'(アポストロフィー)を忘れずに！
 #変装 - https://www.mythicmobs.net/manual/doku.php/addons/disguises/start
 #注意:このフィールドには、プラグイン「LibsDisguises」がサーバーにインストールされ、機能している必要があります。
