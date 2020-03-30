@@ -1,4 +1,4 @@
-SpecialSword:
+super_zombie_sword:
   Id: 272
   Data: 0
   Display: '&eSpecialSword'
@@ -7,7 +7,7 @@ SpecialSword:
   - 'test2'
   Enchantments:
   - DAMAGE_ALL 1
-TestHelmet:
+super_zombie_helmet:
   Id: 306
   Data: 0
   Display: '&eTestHelmet'
