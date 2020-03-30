@@ -110,7 +110,7 @@ mobname:
   DropsPerLevel: 
 #レベルごとのドロップは通常のドロップと同じように機能しますが、ドロップの量はMobのレベルに比例して増加します。
 #例    DropsPerLevel:
-#     -<item(アイテム)/exp(経験値)/droptable(ドロップテーブル)> <amount(量)> <chance(確率)>
+#      - <item(アイテム)/exp(経験値)/droptable(ドロップテーブル)> <amount(量)> <chance(確率)>
 #このオプションは4.4で削除されました。代わりにドロップテーブルでBonusLevelItemsを使用してください
 
   DamageModifiers:
