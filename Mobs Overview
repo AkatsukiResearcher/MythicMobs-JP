@@ -116,9 +116,9 @@ mobname:
 #ダメージ修飾子 - https://www.mythicmobs.net/manual/doku.php/databases/misc/damagemodifiers
 
   Equipment:
-#Mobに最初のスポーン時にバニラアイテムまたは神話アイテムを装備するために使用できます。
+#Mobに最初のスポーン時にバニラアイテムまたは神話のアイテムを装備するために使用できます。
 #例  Equipment: 
-#    -TestHelmet：4 (頭にTestHelmetという神話アイテムを装備させます)
+#    -TestHelmet：4 (頭にTestHelmetという神話のアイテムを装備させます)
 #    -diamond_sword：0 (メインハンドにバニラアイテムのダイヤモンドの剣を装備させます)
 #装置 - https://www.mythicmobs.net/manual/doku.php/databases/misc/equipment
 
