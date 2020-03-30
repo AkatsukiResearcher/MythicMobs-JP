@@ -101,7 +101,7 @@ mobname:
 #または独自の条件システムを備えたカスタムドロップテーブルにすることもできます。
 #例1  Drops:
 #     - diamondsword 1 0.5 (ダイヤモンドの剣が５０％の確率で１つ落ちます)
-#     - SpecialSword 1 1 (特別な剣という神話のアイテムが１００％の確率で落ちます)
+#     - SpecialSword 1 1 (特別な剣という神話のアイテムが１００％の確率で１つ落ちます)
 #例2  Drops:
 #     - <item(アイテム)/exp(経験値)/droptable(ドロップテーブル)> <amount(量)> <chance(確率)>
 #0.01 ＝ 1%(パーセント)
@@ -109,8 +109,11 @@ mobname:
 
   DropsPerLevel: 
 #レベルごとのドロップは通常のドロップと同じように機能しますが、ドロップの量はMobのレベルに比例して増加します。
-#例    DropsPerLevel:
+#例1   DropsPerLevel:
 #      - <item(アイテム)/exp(経験値)/droptable(ドロップテーブル)> <amount(量)> <chance(確率)>
+#例2   DropsPerLevel:
+#      - diamondsword 1 0.8 (ダイヤモンドの剣が８０％の確率で１つ落ちます)
+#      - SpecialSword 3 1 (特別な剣という神話のアイテムが１００％の確率で３つ落ちます)
 #このオプションは4.4で削除されました。代わりにドロップテーブルでBonusLevelItemsを使用してください
 
   DamageModifiers:
