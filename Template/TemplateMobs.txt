@@ -1,5 +1,5 @@
 TestMob:
-  Type: Zombie
+  Type: zombie
   Display: '&eTestMob' 
   Health: 100
   Damage: 10
@@ -17,7 +17,7 @@ TestMob:
     NoDamageTicks: 50 
   Modules:
     ThreatTable: true
-  AIGoalSelectors:
+  AIGoalSelectors::
   - 0 clear
   - 1 meleeattack
   - 2 randomstroll
@@ -28,14 +28,16 @@ TestMob:
   Drops:
   - diamondsword 1 0.5
   - SpecialSword 1 1 
+  - exp 10 1
   DropsPerLevel: 
   - diamondsword 1 0.8 
   - SpecialSword 3 1
+  - exp 50 1
   DamageModifiers:
   -ENTITY_ATTACK 0.75
   Equipment:
-  -TestHelmet：4
-  -diamond_sword：0
+  - TestHelmet:4
+  - diamond_sword:0
   KillMessages:
   - '<target.name> 私に勝負を挑むなど、１００万年早い'
   LevelModifiers:
