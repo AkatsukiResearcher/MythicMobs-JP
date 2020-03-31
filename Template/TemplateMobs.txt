@@ -1,6 +1,6 @@
 super_zombie:
   Type: zombie
-  Display: '&lSuper Zombie&r'
+  Display: '&ejaylaw'
   Health: 200
   Damage: 14
   Armor: 10
