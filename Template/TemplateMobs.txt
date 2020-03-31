@@ -47,7 +47,7 @@ super_zombie:
   - Damage: 1
   Disguise:
     Type: player
-    Skin: '&lSuper Zombie&r'
+    Skin: 'jaylawl'
     Player: jaylawl
   Skills:
   - throw{v=5;vy=5} @target ~onAttack 0.5
